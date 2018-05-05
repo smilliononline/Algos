@@ -1,15 +1,14 @@
-function leapYear (year){
-  if (year % 4 === 0 || year % 400 === 0){
-      console.log(year, "is a leap year.");
-  }
-  else if (year % 100 === 0 && year % 4 === 0){
-      console.log(year, "is not a leap year.")
-  }
-  else{
-      console.log(year, "is really not a leap year at all, not close.")
-  }
-}
 
+function leapYear(year){
+    if ((year % 4 == 0) && (year % 100 !=0) || (year % 400 == 0)){
+    console.log(year, "is a leap year")}
+
+    else {
+        console.log(year, "not a leap year.")
+    }
+    
+
+}
 
 leapYear(1904);
 leapYear(1905); //not a leap year
