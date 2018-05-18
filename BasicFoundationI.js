@@ -134,3 +134,36 @@ console.log(negatives([-1,-2,3,4,5,-9]));
 answer = 0,0,3,4,5,0 */
 
 
+/*Max/Min/Avg
+
+function multicalc (arr){
+    var max = arr[0];
+    var min = arr[0];
+    var sum = 0;
+    for(i=0; i<arr.length; i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+        if(arr[i] < min){
+            min = arr[i];
+        }
+        sum = sum + arr[i];
+        avg = sum / arr.length;
+    }
+    return [max, min, avg];
+}
+console.log(multicalc([1,2,3,4,5]));
+
+answer = 5,1,3: side note - i realized that you shoudl not just set your values for open variables to zero, but actually the first index of the array if you really want to be accurate.  Min = 0 is literally 0*/
+
+
+function swap (arr){
+    var temp = arr[arr.length];
+    
+    for(i=0; i<arr.length; i++){
+        temp = arr[0]
+        return arr;
+    }
+    
+}
+console.log(swap([1,2,3,4,5]));
