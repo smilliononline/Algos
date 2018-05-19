@@ -74,3 +74,40 @@ console.log(countPositives([-2, -1, 1, 3,4,5]));
 answer = 4 */
 
 
+/*Even Odd
+function evenOdd(arr){
+    var newArr = [];
+    for(i = 0; i < arr.length; i++){
+        if(arr[i] % 2 == 0){
+            newArr.push(2);
+        }
+        if(arr[i] % 2 != 0){
+            newArr.push(1);
+        }
+    }
+    if(newArr = [2,2,2]){
+        console.log("Even More So")
+    }
+    if(newArr = [1,1,1]){
+        console.log("That's Odd!")
+    }
+    return arr;
+}
+console.log(evenOdd([1,2,1,3,4,4,4,3,3,3]));*/
+
+
+/*increments and seconds
+function incrSec (arr){
+    for(i = 0; i < arr.length; i=i+2){
+        if(arr[i] % 2 != 0){
+            console.log(arr[i] + 1);
+        }
+                
+    }
+    return arr;
+}
+
+console.log(incrSec([2,3,5,4,7,8,9,4,5]));
+answer = 6,8,10,6; [ 2, 3, 5, 4, 7, 8, 9, 4, 5 ] */
+
+
