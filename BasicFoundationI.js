@@ -157,13 +157,28 @@ console.log(multicalc([1,2,3,4,5]));
 answer = 5,1,3: side note - i realized that you shoudl not just set your values for open variables to zero, but actually the first index of the array if you really want to be accurate.  Min = 0 is literally 0*/
 
 
-function swap (arr){
-    var temp = arr[arr.length];
-    
-    for(i=0; i<arr.length; i++){
-        temp = arr[0]
+/*Swap Values
+
+function swap(arr){
+    var temp = arr[0];
+    arr[0] = arr[arr.length - 1];
+    arr[arr.length-1] = temp;
+    for(i=0; i < arr.length; i++){
         return arr;
     }
-    
 }
 console.log(swap([1,2,3,4,5]));
+answer = 5,2,3,4,1 */
+
+
+function positive(arr){
+    for(i=0; i<arr.length; i++){
+        if(arr[i] < 0){
+            arr[i] = "Dojo";
+        }
+    }
+    return arr;
+}
+console.log(positive([-2, 1, -5, 5, 6, -9]));
+
+/* answer = Dojo, 1, Dojo, 5, 6, Dojo*/
