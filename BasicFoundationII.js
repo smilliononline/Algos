@@ -110,4 +110,40 @@ function incrSec (arr){
 console.log(incrSec([2,3,5,4,7,8,9,4,5]));
 answer = 6,8,10,6; [ 2, 3, 5, 4, 7, 8, 9, 4, 5 ] */
 
+/*Previous Lengths
+function stringLength(arr){
+    for(i=0; i < arr.length; i++){
+         arr[i] = arr[i].length;
+        }
+        return arr;
+    }
+    
+console.log(stringLength(['corn', 'peas', 'carrots', 'wheat']));
+answer = [ 4, 4, 7, 5 ] */
+
+
+/* Add Seven to Most
+function seven(arr){
+    newArr = [];
+    for(i=0; i < arr.length; i++){
+        newArr.push(arr[i]+7)
+    }
+    return newArr;
+}
+console.log(seven([1,2,3,4,5,6]));
+answer = [ 8, 9, 10, 11, 12, 13 ] */
+
+
+/*Reverse Array
+function reverse(arr){
+    for(i=0; i < arr.length; i++){
+        arr[i] = arr[arr.length-1] - arr[i];
+        arr[i]++
+    }
+    return arr;
+}
+console.log(reverse([1,2,3,4,5,6]));
+answer = [ 6, 5, 4, 3, 2, 1 ] */
+
+
 
