@@ -136,14 +136,83 @@ answer = [ 8, 9, 10, 11, 12, 13 ] */
 
 /*Reverse Array
 function reverse(arr){
-    for(i=0; i < arr.length; i++){
-        arr[i] = arr[arr.length-1] - arr[i];
-        arr[i]++
+  
+   for(i=0; i < arr.length/2; i++){
+    var temp = arr[i]
+    arr[i] = arr[arr.length-1-i]
+    arr[arr.length-1-i] = temp;
+   }
+return arr;
+
+}
+   
+console.log(reverse([2,5,3,4,6,1]));
+answer = [ 1, 6, 4, 3, 5, 2 ] */
+
+
+/*Outlooks Negative
+function negative(arr){
+    newArr = []
+    for(i = 0; i < arr.length; i++){
+        if(arr[i] < 0){
+            newArr.push(arr[i]);
+        }
+        else{
+            newArr.push(-arr[i]);
+        }
     }
+    return newArr;
+}
+console.log(negative([1,2,-3,4,-5,6]))
+answer = [ -1, -2, -3, -4, -5, -6 ] */
+
+
+/*Always Hungry
+function eat(arr){
+    var hasFood = false;
+    for(i=0; i < arr.length; i++){
+        if(arr[i] == "food"){
+            console.log("yummy")
+            hasFood = true;
+        }    
+    }
+   
+    if(hasFood == false){
+        console.log("I'm Hungry")
+        }
     return arr;
 }
-console.log(reverse([1,2,3,4,5,6]));
-answer = [ 6, 5, 4, 3, 2, 1 ] */
+
+console.log(eat([1,"food",2,3,"food",5,6]));
+console.log(eat([1,2,3,4,5,6]));
+answer = yummy
+yummy
+[ 1, 'food', 2, 3, 'food', 5, 6 ]
+I'm Hungry
+[ 1, 2, 3, 4, 5, 6 ]*/
 
 
+/*Swap Toward the Center
+function swapCtr(arr){
+  
+    for(i=0; i < arr.length/2; i+=2){
+     var temp = arr[i]
+     arr[i] = arr[arr.length-1-i]
+     arr[arr.length-1-i] = temp;
+    }
+ return arr;
+ 
+ }
+    
+ console.log(swapCtr([2,5,3,4,6,1]));
+ answer = [ 1, 5, 4, 3, 6, 2 ] */
 
+
+ /*
+ function scale(arr, num){
+    for(i=0; i < arr.length; i++){
+         arr[i] = arr[i] * num;
+     }
+return arr;
+ }
+console.log(scale([1,2,3,4],3))
