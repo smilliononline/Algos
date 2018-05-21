@@ -48,16 +48,22 @@ function negatives(arr){
 console.log(negatives([1,-4,6,5,-9,2]));
 answer = [ 1, 'Dojo', 6, 5, 'Dojo', 2 ] */
 
-/*4. Given array, and indices start and end, remove vals in that index range, working in-place (hence shortening the array. For example, removeVals([20,30,40,50,60,70]2,4) should return [20,30,70])*/
+/*4. Given array, and indices start and end, remove vals in that index range, working in-place (hence shortening the array. For example, removeVals([20,30,40,50,60,70]2,4) should return [20,30,70])
 
-function removeVals(arr, x, y){
-    for(i = 0; i < arr.length; i++){
-        if(i > x && i <= y){
-        arr.splice(x,(y-x));
-        } 
+var x = [10, 20, 30, 40, 50, 60];
+
+function removeVals(arr, start, end) {
+    for (var i = start; i < end; i++) {
+        for (var j = start; j + 1 < arr.length; j++) {
+            var temp = arr[j+1];
+            arr[j+1] = arr[j];
+            arr[j] = temp;
+        }
+        arr.pop();
     }
-return arr;
+    return arr;
 }
-console.log(removeVals([5,8,9,2,1,5,0,],2,4));
+console.log(removeVals(x, 2,4));
+answer = [ 10, 20, 50, 60 ] */
 
 
