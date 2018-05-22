@@ -39,3 +39,15 @@ function reverse(arr){
 console.log(reverse([3,5,8,6,2]));
 answer = [ 2, 6, 8, 5, 3 ]
 */
+
+/*4. Create a function that changes a given array to list each original element twice, retaining original order.  Have the function return the new array.  For example repeatTwice( [4,”Ulysses”, 42, false] ) should return [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].
+
+function repeatTwice(arr){
+    var newArr = [];
+    for(i=0; i < arr.length; i ++){
+        newArr.push(arr[i],arr[i]);
+    }
+    return newArr;
+}
+console.log(repeatTwice([4, "Ulysses", 42, false]));
+answer = [ 4, 4, 'Ulysses', 'Ulysses', 42, 42, false, false ] /*
