@@ -58,9 +58,57 @@ console.log(secondToLast([1]));
 answer = Laim, NULL */
 
 
+/*Array: Nth-to-Last: Return the element that is N-from-array's-end.  Given ([5,2,3,6,4,9,7],3), return 4.  If the array is too short, return null.
+
+function nToLast(arr, n){
+    var a = arr[arr.length-n]
+    for(i=0; i < arr.length; i++){
+        if(arr.length < 2){
+            return "NULL";
+        }
+        else return a;
+    }
+}
+console.log(nToLast([5,2,3,6,4,9,7], 3));
+console.log(nToLast([1], 3));
+answer = 4, NULL */
 
 
+/*Array: Second-Largest: Return the second-largest element of an array. Given [42,1,4,3.14,7], return 7.  If the array is too short, return null.
+
+function secLrgest(arr) {
+    // grab first two indexes and compare
+    let max = arr[0];
+    let nextMax = arr[1];
+
+    if (max < nextMax) {
+        let temp = max;
+        max = nextMax;
+        nextMax = temp;
+    }
+
+    // loop thru rest of arr and compare
+    for (i = 2; i < arr.length; i++) {
+        if (arr[i] > max) {
+            nextMax = max;
+            max = arr[i];
+        } else if (arr[i] > nextMax) {
+                nextMax = arr[i];     
+        }
+    }
+    return nextMax;
+}
+console.log(secLrgest([4,6,2,9,7,3,])) */
 
 
+/*Double Trouble: Create a function that changes a given array to list each existing element twice, retaining original order.  Convert [4, "Ulysses", 42, false] to [4,4, "Ulysses", "Ulysses", 42, 42, false, false]. 
 
-
+function repeatTwice(arr){
+    var newArr = [];
+    for(i=0; i < arr.length; i ++){
+        newArr.push(arr[i],arr[i]);
+    }
+    return newArr;
+}
+console.log(double([4, "Ulysses", 42, false]));
+*/
