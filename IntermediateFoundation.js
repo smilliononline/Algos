@@ -101,14 +101,32 @@ function secLrgest(arr) {
 console.log(secLrgest([4,6,2,9,7,3,])) */
 
 
-/*Double Trouble: Create a function that changes a given array to list each existing element twice, retaining original order.  Convert [4, "Ulysses", 42, false] to [4,4, "Ulysses", "Ulysses", 42, 42, false, false]. 
+/*Double Trouble: Create a function that changes a given array to list each existing element twice, retaining original order.  Convert [4, "Ulysses", 42, false] to [4,4, "Ulysses", "Ulysses", 42, 42, false, false]FULL DISCLOSURE: NICK DID THIS ONE IN MATTERMOST
 
-function repeatTwice(arr){
-    var newArr = [];
-    for(i=0; i < arr.length; i ++){
-        newArr.push(arr[i],arr[i]);
+function double(arr){
+    
+    var arr = [1, 2, 3, 4];
+    var origLen = arr.length;
+    
+    for (var p = 0; p < origLen; p++) {
+        arr.push(null);
     }
-    return newArr;
-}
-console.log(double([4, "Ulysses", 42, false]));
+    
+    var lastMoved = (arr.length / 2) - 1
+    for (var i = arr.length - 1; i >= 0; i--) {
+        if (i % 2 == 0) {
+            arr[i] = arr[lastMoved];
+            lastMoved--;
+        }
+    }
+    
+    for (var j = 0; j < arr.length; j++) {
+        if (j % 2 == 0) {
+            arr[j + 1] = arr[j];
+        }
+    }
+    
+    console.log(arr);
+    
+console.log(double([4, "Ulysses", 42, false]))
 */
